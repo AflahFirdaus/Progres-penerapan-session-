@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Login</title>
+{% endblock %}
+
+{% block body %}
+<div class="p-3 mb-2 bg-body-secondary" style="width: 100%; height: 100vh;">
+  <figure class="text-center" style="justify-content: center; align-items: center;">
+    <blockquote class="blockquote">
+      <h3 style="margin-top: 100px;">Trixs</h3>
+      <h5 style="margin-top: 20px;">Belum punya akun?
+        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="/daftar">
+          Daftar
+        </a>
+      </h5>
+    </blockquote>
+  </figure>
+<div class="position-absolute top-50 start-50 translate-middle">
+<div class="container" style="width: 300px; height: 325px; background-color: white; border-radius: 10px;">
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label" style="margin-top: 40px;">Email address</label>
+        <input name="inpEmail" type="email" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input name="inpPass" type="password" class="form-control">
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary mt-4">Login</button>
+      </div>
+    </form>
+
+    <script>
+      function validateForm() {
+          var email = document.getElementById("inpEmail").value;
+          var password = document.getElementById("inpPass").value;
+
+          // Validasi email (gunakan ekspresi reguler)
+          var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+          if (!email.match(emailPattern)) {
+              alert("Email tidak valid");
+              return false;
+          }
+
+          // Validasi password (misalnya, minimal 8 karakter)
+          if (password.length < 8) {
+              alert("Password harus memiliki minimal 8 karakter");
+              return false;
+          }
+
+          return true; // Izinkan pengiriman formulir jika semua validasi berhasil
+      }
+  </script>
+</div>
+</div> 
+</div>
+{% endblock %}

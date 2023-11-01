@@ -1,0 +1,227 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Coldplay</title>
+{% endblock %}
+
+{% block body %} 
+<div class="p-3 mb-2 bg-body-secondary">
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg bg-primary" style="width: 100%;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Trixs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#footer">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#concrete">All</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#concrete">Concrete</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#theater">Theater</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+      <a href="/daftar" class="btn btn-outline-light" aria-current="page" style="margin-left: 10px;">Sign Up</a>
+      <a href="/login" class="btn btn-info" style="margin-left: 10px;">Sign In</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar -->
+
+<!-- Container -->
+<div class="container">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" style="margin-top: 80px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkOHD31_cy2jCiBolAnxSeivXy26FFNm5vsA&usqp=CAU" class="img-fluid" alt="..." style="width: 700px; height: 300px; margin-right: 100px; border-radius: 10px;">
+      </div>
+      <div class="col">
+        <div class="container" style="background-color:white; width: 270px; height: 300px; border-radius: 10px;">
+          <figure class="text-center" style="justify-content: center; align-items: center;">
+            <blockquote class="blockquote">
+              <p style="margin-top: 80px; text-align: left; font-size: 22px;">We The Fest</p>
+              <p style="text-align: left; font-size: 14px; margin-top: 50px;">28 November 2023</p>
+              <p style="text-align: left; font-size: 14px;">15.00 - 22.00 WIB</p>
+              <p style="text-align: left; font-size: 14px; margin-bottom: 40px;">Stadion Gelora Bungkarno, Jakarta</p>
+              <a><hr class="divider"></a>
+              <p style="text-align: left; font-size: 10px;">Diselenggarakan oleh</p>
+              <p style="text-align: left; font-size: 14px;">PRASTIGE PROMOTION</p>
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" style="margin-top: 30px;">
+        <blockquote class="blockquote">
+          <p style="text-align: left; margin-left: 20px; margin-top: 20px;">Deckripsi</p>
+          <a><hr class="divider"></a>
+        </blockquote>
+        <h4 style="text-align: left; margin-bottom: 30px;"><strong>We The Fest 2023</strong></h4>
+        <h6 style="text-align: left;"><strong>UNDVD | PF Voice | ICI Worship | VIFA Worship | Jacqlien Celosse | Dave Gerard Que | Michael Panjaitan.</strong></h6>
+      </div>
+      <div class="col">
+        <div class="container" style="background-color:white; width: 270px; height: 220px; border-radius: 10px;">
+          <figure class="text-center" style="justify-content: center; align-items: center;">
+            <blockquote class="blockquote">
+              <p style="margin-top: 100px; text-align: left; font-size: 22px;">Trixs</p>
+              <p style="text-align: center; font-size: 12px; margin-top: 30px;">Kamu belum memilih tiket. Silakan pilih lebih dulu di tab menu TIKET.</p>
+              <a><hr class="divider"></a>
+              <p style="text-align: left; font-size: 10px; float: left;">Harga mulai dari</p>
+              <p style="text-align: left; font-size: 10px; float: right;">Rp.1.500.000</p>
+              <button class="btn btn-primary" type="button" style="margin-top: 5px; width: 185px; height: 40px;">Beli Tiket</button>
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Container -->
+
+<figure class="text-center" style="margin-top: 60px;">
+  <blockquote class="blockquote">
+    <p id="concrete" style="font-size: 30px;"><strong>Event Lainya</strong></p>
+  </blockquote>
+</figure>
+
+<!-- iklan -->
+
+<div class="container text-center" id="1">
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" style="padding-bottom: 20px; padding-top: 10px;">
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkOHD31_cy2jCiBolAnxSeivXy26FFNm5vsA&usqp=CAU" class="card-img-top" alt="...">
+      
+        <div class="card-body">
+          <h5 class="card-title">We The Fest</h5>
+          <h5 class="card-text">Jakarta</h5>
+          <h5 class="card-text">24 Nov - 26 Nov 2023</h5>
+          <a href="/produk1" class="btn btn-primary">Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMJbmCrTTii-FW7Ujo-wXlbINeftHmS3EXg&usqp=CAU" class="card-img-top" alt="...">
+      
+        <div class="card-body">
+          <h5 class="card-title">Prambanan Jezz</h5>
+          <h5 class="card-text">Jakarta</h5>
+          <h5 class="card-text">24 Nov - 26 Nov 2023</h5>
+          <a href="#" class="btn btn-primary">Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/people-having-fun-wedding-hall_1303-19593.jpg?size=626&ext=jpg&ga=GA1.1.462858005.1673793973&semt=sph" class="card-img-top" alt="...">
+      
+        <div class="card-body">
+          <h5 class="card-title">Twenty One Pilots</h5>
+          <h5 class="card-text">Jakarta</h5>
+          <h5 class="card-text">24 Nov - 26 Nov 2023</h5>
+          <a href="#" class="btn btn-primary">Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgii6x4zu8SL92J7UjKMG-UuHReXhJw6NGw&usqp=CAU" class="card-img-top" alt="...">
+      
+        <div class="card-body">
+          <h5 class="card-title">Synchronize Festival</h5>
+          <h5 class="card-text">Jakarta</h5>
+          <h5 class="card-text">24 Nov - 26 Nov 2023</h5>
+          <a href="#" class="btn btn-primary">Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMSsH7SANUIxqMCuPB60buZ0aHIkZeTawmtQ&usqp=CAU" class="card-img-top" alt="...">
+      
+        <div class="card-body">
+          <h5 class="card-title">Superman Is Dead</h5>
+          <h5 class="card-text">Jakarta</h5>
+          <h5 class="card-text">24 Nov - 26 Nov 2023</h5>
+          <a href="#" class="btn btn-primary">Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- iklan -->
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="p-3 mb-2 bg-primary text-white">
+    <div class="container">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <p id="footer" style="font-size: 18px;"><strong>Tentang Trixs</strong></p>
+            <p style="font-size: 16px;">Masuk</p>
+            <p style="font-size: 16px;">Lihat item</p>
+            <p style="font-size: 16px;">FAQ</p>
+          </div>
+          <div class="col">
+            <p><strong>Lokasi Event</strong></p>
+            <p style="font-size: 18px;">Jakarta</p>
+            <p style="font-size: 16px;">Yogyakarta</p>
+            <p style="font-size: 16px;">Surabaya</p>
+            <p style="font-size: 16px;">Bandung</p>
+            <p style="font-size: 16px;">Solo</p>
+            <p style="font-size: 16px;">Semarang</p>
+            <p style="font-size: 16px;">Maksar</p>
+          </div>
+          <div class="col">
+            <p><strong>Inspirasi Event</strong></p>
+            <p style="font-size: 18px;">Frestival</p>
+            <p style="font-size: 16px;">Konser</p>
+            <p style="font-size: 16px;">Theater & Drama</p>
+            <p style="font-size: 16px;">Semua Kategori</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-3 mb-2 bg-info text-white">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p style="font-size: 28px;">Trixs</p>
+      </blockquote>
+      <p>
+        Copyright @ 2023 Trixs Company All right reserved
+      </p>
+    </figure>
+</footer>
+<!-- Footer -->
+{% endblock %}
